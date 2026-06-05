@@ -11,8 +11,7 @@ app = FastAPI()
 
 @app.get("/")
 def root():
-    return {"status": "DCR API running 
-"}
+    return {"status": "DCR API running"}
 
 if __name__ == "__main__":
     uvicorn.run("main:app", host="", port=int(os.environ.get(PORT", 8000)))
